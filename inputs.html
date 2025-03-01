@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,35 +18,31 @@
             margin-bottom: 5px;
             font-weight: bold;
         }
-        .input-group input[type="text"],
-        .input-group input[type="password"],
-        .input-group input[type="email"],
-        .input-group input[type="number"],
-        .input-group input[type="tel"],
-        .input-group input[type="url"],
-        .input-group input[type="search"],
-        .input-group input[type="date"],
-        .input-group input[type="datetime-local"],
-        .input-group input[type="month"],
-        .input-group input[type="week"],
-        .input-group input[type="time"],
-        .input-group input[type="color"],
-        .input-group input[type="file"],
-        .input-group input[type="range"] {
+        .input-group input[type="text"] {
             width: 100%;
             padding: 10px;
             margin-top: 5px;
             border: 1px solid #ccc;
             border-radius: 5px;
             box-sizing: border-box;
+            background-color: #e6f7ff;
         }
-        .input-group input[type="radio"],
+        .input-group input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #ffe6e6;
+        }
+        .input-group input[type="radio"] {
+            margin-right: 10px;
+        }
         .input-group input[type="checkbox"] {
             margin-right: 10px;
         }
-        .input-group input[type="button"],
-        .input-group input[type="submit"],
-        .input-group input[type="reset"] {
+        .input-group input[type="button"] {
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
@@ -54,14 +50,148 @@
             color: white;
             cursor: pointer;
         }
-        .input-group input[type="button"]:hover,
-        .input-group input[type="submit"]:hover,
-        .input-group input[type="reset"]:hover {
+        .input-group input[type="button"]:hover {
             background-color: #0056b3;
+        }
+        .input-group input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #fff0e6;
+        }
+        .input-group input[type="file"] {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #f0e6ff;
+        }
+        .input-group input[type="hidden"] {
+            display: none;
         }
         .input-group input[type="image"] {
             display: block;
             margin: 10px 0;
+            border-radius: 5px;
+        }
+        .input-group input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #e6ffe6;
+        }
+        .input-group input[type="range"] {
+            width: 100%;
+            margin-top: 5px;
+        }
+        .input-group input[type="search"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #e6e6ff;
+        }
+        .input-group input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #fff5e6;
+        }
+        .input-group input[type="time"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #e6fff5;
+        }
+        .input-group input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #fff5e6;
+        }
+        .input-group input[type="datetime-local"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #e6fff5;
+        }
+        .input-group input[type="week"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #e6f7ff;
+        }
+        .input-group input[type="month"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #ffe6f7;
+        }
+        .input-group input[type="url"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #f0e6ff;
+        }
+        .input-group input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+        }
+        .input-group input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        .input-group input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #dc3545;
+            color: white;
+            cursor: pointer;
+        }
+        .input-group input[type="reset"]:hover {
+            background-color: #c82333;
+        }
+        .input-group input[type="color"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
         }
     </style>
 </head>

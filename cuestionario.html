@@ -18,6 +18,7 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 50%;
+            justify-content: center;
         }
         .cuestionario h1 {
             text-align: center;
@@ -29,10 +30,15 @@
             display: block;
             margin-bottom: 5px;
         }
-        .pregunta input {
+        .pregunta input,
+        .pregunta select,
+        .pregunta textarea {
             width: 100%;
             padding: 8px;
             box-sizing: border-box;
+        }
+        .pregunta input[type="checkbox"] {
+            width: auto;
         }
     </style>
 </head>
@@ -74,7 +80,11 @@
             </div>
             <div class="pregunta">
                 <label for="genero">9. Género:</label>
-                <input type="text" id="genero" name="genero">
+                <select id="genero" name="genero">
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
             </div>
             <div class="pregunta">
                 <label for="ocupacion">10. Ocupación:</label>
@@ -94,31 +104,50 @@
             </div>
             <div class="pregunta">
                 <label for="educacion">14. Nivel de educación:</label>
-                <input type="text" id="educacion" name="educacion">
+                <select id="educacion" name="educacion">
+                    <option value="secundaria">Secundaria</option>
+                    <option value="bachillerato">Bachillerato</option>
+                    <option value="universidad">Universidad</option>
+                    <option value="postgrado">Postgrado</option>
+                </select>
             </div>
             <div class="pregunta">
                 <label for="idiomas">15. Idiomas que habla:</label>
-                <input type="text" id="idiomas" name="idiomas">
+                <textarea id="idiomas" name="idiomas" rows="3"></textarea>
             </div>
             <div class="pregunta">
                 <label for="hobbies">16. Hobbies:</label>
-                <input type="text" id="hobbies" name="hobbies">
+                <textarea id="hobbies" name="hobbies" rows="3"></textarea>
             </div>
             <div class="pregunta">
                 <label for="deportes">17. Deportes que practica:</label>
-                <input type="text" id="deportes" name="deportes">
+                <textarea id="deportes" name="deportes" rows="3"></textarea>
             </div>
             <div class="pregunta">
                 <label for="musica">18. Géneros musicales favoritos:</label>
-                <input type="text" id="musica" name="musica">
+                <textarea id="musica" name="musica" rows="3"></textarea>
             </div>
             <div class="pregunta">
                 <label for="peliculas">19. Películas favoritas:</label>
-                <input type="text" id="peliculas" name="peliculas">
+                <textarea id="peliculas" name="peliculas" rows="3"></textarea>
             </div>
             <div class="pregunta">
                 <label for="libros">20. Libros favoritos:</label>
-                <input type="text" id="libros" name="libros">
+                <textarea id="libros" name="libros" rows="3"></textarea>
+            </div>
+            <div class="pregunta">
+                <label>21. ¿Te gusta programar?</label>
+                <input type="checkbox" id="programar_si" name="programar" value="si">
+                <label for="programar_si">Sí</label>
+                <input type="checkbox" id="programar_no" name="programar" value="no">
+                <label for="programar_no">No</label>
+            </div>
+            <div class="pregunta">
+                <label>22. ¿Tienes experiencia en desarrollo web?</label>
+                <input type="checkbox" id="experiencia_si" name="experiencia_web" value="si">
+                <label for="experiencia_si">Sí</label>
+                <input type="checkbox" id="experiencia_no" name="experiencia_web" value="no">
+                <label for="experiencia_no">No</label>
             </div>
             <div class="pregunta">
                 <button type="submit">Enviar</button>
